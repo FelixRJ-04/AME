@@ -1,0 +1,85 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: gray;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    min-height: 70px;
+    display: flex;
+    background-color: rgb(19, 26, 22);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.logo img{
+    height: 70px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: green
+}
+
+@media (max-width: 680px){
+    header{
+        flex-direction: column;
+        nav{
+            padding: 10px 0px;
+        }
+    }
+
+}
+/* footer{
+    min-height: 50px;
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    /* align-items: end; */
+    /* padding: 10px 0px; */
+
+/* lineaAzul{
+    width: auto;
+    height: 10px;
+    background: aqua;
+} */
+/* lineaAzulMarino{
+    background: blue;
+} */
+
+/* .contactoFooter{
+    width: auto;
+    height: 25rem;
+    padding: 1.563rem 22.125rem 1.875rem 16.25rem;
+    font-weight: 300;
+    font-size: 20px;
+} */
+
+/* @media(max-width: 680px){
+    footer{
+        flex-direction: column;
+        nav{
+            padding: 10px 0px;
+        }
+    }
+} */
+
+/* .menuFooter>a{
+    color: var(--blanco);
+    font-weight: 800px;
+    display: block;
+  } */
+  
+  /* .menuFooter>a:hover{
+    text-decoration: underline;
+  } */

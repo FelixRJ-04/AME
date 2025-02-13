@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: white;
+    padding-top: 100px; /* Ajusta este valor según la altura del footer */
+}
+
+footer {
+    min-height: 100px; /* Altura del footer (ajusta según necesites) */
+    background-color: aqua; /* Color aqua del footer */
+    position: fixed; /* Fija el footer en la parte superior */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0; /* Lo coloca a la izquierda */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+    padding-top: 10px; /* Espacio superior para que el aqua sobresalga */
+    box-sizing: border-box; /* Incluye el padding en el ancho y alto total */
+}
+
+.Azul {
+    background-color: rgb(0, 74, 152); /* Color azul marino */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ocupa todo el ancho del footer */
+    height: 200px; /* Altura del azul marino (ajusta según necesites) */
+    margin: 0; /* Sin márgenes */
+}
+
+.LineaAzulMarino {
+    color: white;
+    margin-left: 10px;
+}
+
+.menuFooter > a {
+     color: white;
+     font-weight: 800;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-left: 10px;
+     padding-right: 150px;
+     line-height: 1.5; /* Ajusta el interlineado para mejor visualización */
+     text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+.menuFooter > a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
