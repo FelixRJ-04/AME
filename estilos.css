@@ -1,0 +1,62 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el header */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-gris {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: right;
+}
+
+.enlaces-superiores a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+.separador {
+  color: #ccc;
+}
+
+.header-principal {
+  background-color: #003366; /* Azul marino */
+  padding: 20px;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+}
+
+.logoUASLP {
+  width: 100px;
+  display: block; /* Visible por defecto */
+}
+
+.textoUASLP {
+  color: white;
+  font-size: 1.5rem;
+  display: block; /* Oculto por defecto */
+}
+
+.menuheader {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.menuheader a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}

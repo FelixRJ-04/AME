@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header AME</title>
+    <!-- Enlace a normalize.css para resetear estilos predeterminados -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- Enlace a la fuente de Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Enlace a tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!-- Contenedor principal del header -->
+    <div class="sticky-top">
+      <!-- Sección superior del header (gris) -->
+      <div class="header-gris">
+        <div class="enlaces-superiores">
+          <a href="https://correo.uaslp.mx">
+            <img
+              src="https://www.uaslp.mx/ImagenesPortal/ImgComun/correo.png"
+              width="30px"
+              alt="Correo"
+            />
+            Correo
+          </a>
+          <span class="separador">|</span>
+          <a href="https://www.uaslp.mx/Directorio">
+            <img
+              src="https://www.uaslp.mx/ImagenesPortal/ImgComun/directorio.png"
+              width="30px"
+              alt="Directorio"
+            />
+            Directorio
+          </a>
+        </div>
+      </div>
+
+      <!-- Sección principal del header (azul marino) -->
+      <div class="header-principal">
+        <header class="headerSeccion">
+          <!-- Logo y título -->
+          <div class="logo-titulo">
+            <a href="https://www.uaslp.mx">
+              <img class="logoUASLP" src="logoUASLP.png" alt="Logo UASLP" />
+            </a>
+            <span class="textoUASLP">Área Mecánica y Eléctrica</span>
+          </div>
+
+          <!-- Menú de navegación -->
+          <nav class="menuheader">
+            <a href="https://aspirantes.uaslp.mx">Aspirantes</a>
+            <span class="separador">|</span>
+            <a href="https://estudiantes.uaslp.mx/induccion/">Estudiantes</a>
+            <span class="separador">|</span>
+            <a href="#">Egresados</a>
+            <span class="separador">|</span>
+            <a href="#">Docentes</a>
+            <span class="separador">|</span>
+            <a href="#">Administrativos</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <!-- Script para manejar el cambio de logo a texto al hacer scroll -->
+    <script>
+      // Función que se ejecuta al hacer scroll
+      function scrollFunction() {
+        if (window.scrollY > 100) {
+          // Si el scroll es mayor a 100px, oculta el logo y muestra el texto
+          document.querySelector(".logoUASLP").style.display = "none";
+          document.querySelector(".textoUASLP").style.display = "block";
+        } else {
+          // Si el scroll es menor a 100px, muestra el logo y oculta el texto
+          document.querySelector(".logoUASLP").style.display = "block";
+          document.querySelector(".textoUASLP").style.display = "none";
+        }
+      }
+
+      // Asignar la función scrollFunction al evento scroll
+      window.onscroll = scrollFunction;
+    </script>
+  </body>
+</html>
