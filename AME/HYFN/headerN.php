@@ -8,7 +8,7 @@
 
 <script type="text/javascript">
 
-
+/* Esta seccion de aqui es la que hace el cambio de imagen a texto en el desplazamiento del scroll */
         $(function () {
             var tam = viewSize();
             if (tam == "xl" || tam == "lg") {
