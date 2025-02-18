@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilosMenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   
+</head>
+<body>
+    <div class="contenedor bodies">
+        <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"></i></span>
+        <nav class="main-nav">
+            <div class="menu-container">
+                <ul class="menu" id="menu">
+                    <li class="menu__item container-submenu">
+                        <a href="#" class="menu__link submenu-btn">Inicio <i class="fas solid fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="https://ingenieria.uaslp.mx" class="menu__link">Ingeniería</a></li>
+                            <li class="menu__item"><a href="https://ingenieria.uaslp.mx/ame/" class="menu__link">Mecánica Eléctrica</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item container-submenu">
+                        <a href="#" class="menu__link submenu-btn">Carreras <i class="fas solid fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="http://ame.uaslp.mx/secciones/carreras/informacion.php?clvcar=12" class="menu__link">Mecánica</a></li>
+                            <li class="menu__item"><a href="http://ame.uaslp.mx/secciones/carreras/informacion.php?clvcar=20" class="menu__link">Mecatrónica</a></li>
+                            <li class="menu__item"><a href="http://ame.uaslp.mx/secciones/carreras/informacion.php?clvcar=05" class="menu__link">Mecánica Eléctrica</a></li>
+                            <li class="menu__item"><a href="http://ame.uaslp.mx/secciones/carreras/informacion.php?clvcar=09" class="menu__link">Mecánica Administrativa</a></li>
+                            <li class="menu__item"><a href="http://ame.uaslp.mx/secciones/carreras/informacion.php?clvcar=18" class="menu__link">Electricidad y Automatización</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item container-submenu">
+                        <a href="#" class="menu__link submenu-btn">Alumnos <i class="fas solid fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="http://ame.uaslp.mx/secciones/alumnos/sesion/login.php" class="menu__link">Encuesta</a></li>
+                            <li class="menu__item"><a href="https://ingenieria.uaslp.mx/ame/Paginas/Proyecto-Integrador/2944" class="menu__link">Proyecto Integrador</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item container-submenu">
+                        <a href="#" class="menu__link submenu-btn">Profesores <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="http://ame.uaslp.mx/secciones/profesor/profesores.php?carrera=20" class="menu__link">Directorio</a></li>
+                            <li class="menu__item"><a href="http://ame.uaslp.mx/secciones/profesor/sesion/login.php" class="menu__link">Inicio de Sesión</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="https://ingenieria.uaslp.mx/ame/Paginas/Organigramas/91" class="menu__link">Organigrama</a></li>
+                    <li class="menu__item"><a href="https://ingenieria.uaslp.mx/ame/Paginas/Academias/104" class="menu__link">Academias</a></li>
+                </ul>
+                <!-- Barra de búsqueda -->
+                <div class="search-container">
+                    <div class="d-flex text-end">
+                        <script async src="https://cse.google.com/cse.js?cx=e51b2169d01164511"></script>
+                        <div class="gcse-search"></div>
+                    </div>
+                    <!-- Barra de busqueda -->
+            </div>
+        </nav>
+        <script src="menu1.js"></script>
+    </div>
+</body>
+</html>
