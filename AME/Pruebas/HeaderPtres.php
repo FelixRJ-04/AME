@@ -5,37 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header UASLP</title>
-    <!-- Carga normalize.css para que los estilos se vean igual en todos los navegadores -->
     <link rel="preload" href="normalize.css" as="style">
     <link rel="stylesheet" href="normalize.css">
-    <!-- Carga la fuente Open Sans de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Carga los estilos personalizados -->
     <link rel="stylesheet" type="text/css" href="/comunes/estilosNuevos.css">
-    <!-- Carga jQuery para manejar eventos y animaciones -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         // Función para detectar el tamaño de la pantalla
         function viewSize() {
-            const width = window.innerWidth; // Obtiene el ancho de la pantalla
-            if (width < 576) return "sm"; // Pantallas pequeñas (móviles)
-            if (width >= 576 && width < 768) return "md"; // Tablets pequeñas
-            if (width >= 768 && width < 992) return "lg"; // Tablets grandes y laptops
-            if (width >= 992) return "xl"; // Pantallas de escritorio
+            const width = window.innerWidth; 
+            if (width < 576) return "sm"; 
+            if (width >= 576 && width < 768) return "md"; 
+            if (width >= 768 && width < 992) return "lg"; 
+            if (width >= 992) return "xl"; 
         }
 
         // Cuando la página se carga, verifica el tamaño de la pantalla
         $(function() {
-            var tam = viewSize(); // Obtiene el tamaño de la pantalla
+            var tam = viewSize(); 
             if (tam == "xl" || tam == "lg") {
-                // Si la pantalla es grande, activa la función de scroll
+                
                 window.onscroll = function() {
                     scrollFunction()
                 };
             } else {
-                // Si la pantalla es pequeña, cambia el logo a texto directamente
+                
                 cambiarLogoATexto();
             }
         });
@@ -43,10 +39,10 @@
         // Función que se ejecuta al hacer scroll
         function scrollFunction() {
             if ($(window).scrollTop() > 100) {
-                // Si el scroll es mayor a 100px, cambia el logo a texto
+                
                 cambiarLogoATexto();
             } else {
-                // Si el scroll es menor a 40px, vuelve a mostrar el logo
+                
                 restaurarLogo();
             }
         }
